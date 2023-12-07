@@ -90,7 +90,7 @@
 const peopleWithBoat = new Set(["Tahia", "Tamzid", "Tahsin", "Tanima"]);
 const peopleWithUmbrella = new Set(["Tahia", "Tamzid", "Tahmid", "Tayeba"]);
 
-function findPeopleWithOnlyUmbrella(setBoat, setUmbrella) {
+function findPeopleWithOnlyBoat(setBoat, setUmbrella) {
     const peopleWithOnlyBoat = new Set();
     for (const person of setBoat) {
         if (!setUmbrella.has(person)) {
@@ -99,4 +99,4 @@ function findPeopleWithOnlyUmbrella(setBoat, setUmbrella) {
     }
     return peopleWithOnlyBoat;
 };
-console.log(findPeopleWithOnlyUmbrella(peopleWithBoat, peopleWithUmbrella));
+console.log(findPeopleWithOnlyBoat(peopleWithBoat, peopleWithUmbrella));
