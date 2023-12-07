@@ -87,16 +87,66 @@
 // console.log(findPeopleWithOnlyUmbrella(peopleWithBoat, peopleWithUmbrella));
 
 // Example-3 : Have to creat a set which will show the people with only boat
-const peopleWithBoat = new Set(["Tahia", "Tamzid", "Tahsin", "Tanima"]);
-const peopleWithUmbrella = new Set(["Tahia", "Tamzid", "Tahmid", "Tayeba"]);
+// const peopleWithBoat = new Set(["Tahia", "Tamzid", "Tahsin", "Tanima"]);
+// const peopleWithUmbrella = new Set(["Tahia", "Tamzid", "Tahmid", "Tayeba"]);
 
-function findPeopleWithOnlyBoat(setBoat, setUmbrella) {
-    const peopleWithOnlyBoat = new Set();
-    for (const person of setBoat) {
-        if (!setUmbrella.has(person)) {
-            peopleWithOnlyBoat.add(person)
-        }
-    }
-    return peopleWithOnlyBoat;
-};
-console.log(findPeopleWithOnlyBoat(peopleWithBoat, peopleWithUmbrella));
+// function findPeopleWithOnlyBoat(setBoat, setUmbrella) {
+//     const peopleWithOnlyBoat = new Set();
+//     for (const person of setBoat) {
+//         if (!setUmbrella.has(person)) {
+//             peopleWithOnlyBoat.add(person)
+//         }
+//     }
+//     return peopleWithOnlyBoat;
+// };
+// console.log(findPeopleWithOnlyBoat(peopleWithBoat, peopleWithUmbrella));
+
+// Map
+
+// Example-1
+// const myMap = new Map([
+//     ["name", "Mimi"],
+//     ["rool", 20],
+//     [24, "temp"],
+//     [true, "it'sRaining"],
+// ]);
+// myMap.set("subject", "Math");     //To add properties in myMap
+// myMap.delete("rool");    //To delete properties from myMap
+// // myMap.clear();   //To delete the whole myMap data structure
+// console.log(myMap);
+
+// for (const [key, value] of myMap) { console.log(`${key} : ${value}`); };
+
+// Example-2
+// const animal = new Map()
+// const addAnimals = (species) => {
+//     if (animal.has(species)) {
+//         let count = animal.get(species);
+//         animal.set(species, count + 1)
+//     } else {
+//         animal.set(species, 1);
+//     }
+// };
+// addAnimals("Tiger");
+// addAnimals("Tiger");
+// addAnimals("Monkey");
+// addAnimals("Elephent");
+// addAnimals("Koyala");
+// addAnimals("Snake");
+// addAnimals("Lepard");
+// addAnimals("Rhino");
+// addAnimals("Zebra");
+// addAnimals("Giraffe");
+// addAnimals("Hippo");
+
+// console.log(animal);
+
+// const removeAnimals = (species) => {
+//     if (animal.has(species)) {
+//         let count = animal.get(species);
+//         animal.set(species, count - 1)
+//     } else {
+//         console.log(`${species} is not available`);
+//     }
+// };
+// removeAnimals("Lion");
