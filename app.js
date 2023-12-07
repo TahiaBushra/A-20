@@ -150,3 +150,18 @@
 //     }
 // };
 // removeAnimals("Lion");
+
+// String
+// const str = "Assalamualaikum Everyone";
+// console.log(str.length);
+// console.log(str[5]);
+// console.log(str.charAt(7));
+// console.log(str.at(-3));
+// console.log(str.toLowerCase());
+// console.log(str.toUpperCase());
+// console.log(str.replace("Everyone", "Everybody"));
+// console.log(str.replace(" ", "-"));
+// const splittedStr = str.split(" ");
+// console.log(splittedStr);
+// console.log(str.trim());
+// console.log(str.trimEnd());
